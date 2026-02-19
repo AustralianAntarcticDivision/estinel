@@ -9,7 +9,7 @@ The Estinel Satellite Image Browser is a web-based tool for viewing, comparing, 
 - **Processing:** GDAL and R targets package
 - **Hosting:** Pawsey Supercomputing Research Centre
 - **Development:** Built collaboratively with Claude AI
-- **Repository:** https://github.com/mdsumner/estinel
+- **Repository:** https://github.com/AustralianAntarcticDivision/estinel
 
 ---
 

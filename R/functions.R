@@ -543,7 +543,6 @@ build_image_png <- function(x, force = FALSE, type) {
         fs::dir_create(dirname(outpng))
       }
     }
-    # writeLines(c(dsn, outpng), "/perm_storage/home/mdsumner/Git/estinel/afile")
     r <- terra::rast(dsn, raw = TRUE)
     if (type == "q128") {
       r <- stretch_q128(r)

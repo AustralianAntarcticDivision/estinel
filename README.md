@@ -66,7 +66,8 @@ The browser provides:
 After rating images: 1. Click the ⭐ star button to open the rating
 panel 2. Click “Export Ratings” to download your classifications as JSON
 3. Share your ratings by [opening an
-issue](https://github.com/mdsumner/estinel/issues) on this repository
+issue](https://github.com/AustralianAntarcticDivision/estinel/issues) on
+this repository
 
 Community ratings can be aggregated and shared via URL import for
 collaborative classification efforts.
