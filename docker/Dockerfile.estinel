@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM ghcr.io/hypertidy/gdal-r-full:latest
 
-LABEL build.date="2026-04-15"
+LABEL build.date="2026-04-15 00"
 LABEL org.opencontainers.image.source="https://github.com/AustralianAntarcticDivision/estinel"
 LABEL org.opencontainers.image.description="Estinel production runner (R + GDAL + targets)"
 
