@@ -510,8 +510,8 @@ tibble::tibble(
 location = "South Sandwich Islands",
 lon = -26.5,
 lat = -57.75,
-radius = 150000,
-radius2 = 150000,
+radiusx = 150000,
+radiusy = 150000,
 resolution = 120, purpose = "island"
 ),
 tibble::tibble(location = "Meunna", lon = 145.4775185, lat = -41.0841384, radiusx = 6000, radiusy = 6000, purpose = "tasmania"),
