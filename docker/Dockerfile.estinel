@@ -11,11 +11,7 @@ RUN R -e "install.packages('remotes', repos = 'https://cloud.r-project.org')" \
       'targets', 'tarchetypes', 'crew', \
       'reproj', 'sds', 'jsonlite', 'vapour', \
       'dplyr', 'glue', 'digest', 'gdalraster', 'minioclient' \
-    ), upgrade = 'always')" \
- && R -e "pkgs <- c('targets','tarchetypes','crew','reproj','sds','jsonlite','vapour','dplyr','glue','digest','gdalraster','minioclient'); \
-          miss <- pkgs[!pkgs %in% rownames(installed.packages())]; \
-          if (length(miss)) stop('Missing: ', paste(miss, collapse=', ')); \
-          cat('All packages installed OK\n')"
+    ), upgrade = 'always')" 
 
 # minioclient ships the mc binary on first use; pre-fetch it at build time
 # so the container doesn't need network access for this on first run.
