@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y nano
 RUN R -e "install.packages('remotes', repos = 'https://cloud.r-project.org')" \
  && R -e "remotes::install_github(c('hypertidy/sds'))" \ 
  && R -e "remotes::install_cran(c( \
-      'qs2', 'readxl', 'vaster', \
+      'qs2', 'readxl', 'vaster', 'tidyr', \
       'targets', 'tarchetypes', 'crew', \
       'reproj', 'jsonlite', 'vapour', \
       'dplyr', 'glue', 'digest', 'gdalraster', 'minioclient' \
