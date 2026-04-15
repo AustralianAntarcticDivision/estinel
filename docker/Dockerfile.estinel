@@ -8,9 +8,10 @@ LABEL org.opencontainers.image.description="Estinel production runner (R + GDAL 
 # Upgrade any existing R packages, then install the estinel runtime deps.
 # install_cran(..., upgrade = "always") makes the "all upgrades welcome" intent explicit.
 RUN R -e "install.packages('remotes', repos = 'https://cloud.r-project.org')" \
+ && R -e "remotes::install_github(c('hypertidy/sds')) \ 
  && R -e "remotes::install_cran(c( \
       'targets', 'tarchetypes', 'crew', \
-      'reproj', 'sds', 'jsonlite', 'vapour', \
+      'reproj', 'jsonlite', 'vapour', \
       'dplyr', 'glue', 'digest', 'gdalraster', 'minioclient' \
     ), upgrade = 'always')" 
 
